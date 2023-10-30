@@ -5,6 +5,8 @@ pipeline {
        IMAGE_NAME='dskredhat/devops-test:php$BUILD_NUMBER'
        DEPLOY_SERVER_IP='ec2-user@172.31.8.141'
    }
+      echo "enviroment complete"
+
     stages {          
         stage('BUILD DOCKERIMAGE AND PUSH TO DOCKERHUB') {
            agent any            
